@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex2/src/main/scala/advinhacao.scala:20:5: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m    case Start() =>[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex2/src/main/scala/advinhacao.scala:23:5: illegal start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m    case Contador(cont) = {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
