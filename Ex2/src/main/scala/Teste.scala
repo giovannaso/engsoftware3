@@ -10,7 +10,9 @@ import scala.io._
 sealed trait Message
 
 case class Guess(n: Int) extends Message
-case class Resultado(valor: Int) extends Message
+case class Resultado() extends Message
+case class Exibir(valor: Int) extends Message
+case class Contador() extends Message
 
 
 class Worker extends Actor{
@@ -21,43 +23,44 @@ class Worker extends Actor{
         val r = scala.util.Random
         val n = r.nextInt(10)
         if (n == num){
-        println("Jogador" + (i+1) + "acertou!")
-      //  c = 1
+        println("Jogador" + " " + (i+1) + " " + "acertou!")
+        sender ! Contador()
         }
         }
-        sender ! Resultado(0)
+        sender ! Resultado()
     }
 }
 }
 
 class Master(num:Int, listener: ActorRef) extends Actor{
- 
-   // var c = 0
+ var cont = 0
     val Worker = context.actorOf(Props[Worker].withRouter(RoundRobinRouter(32)), "Worker")
       
     override def receive: Receive = {
         case Guess => {
             val r = scala.util.Random
             val n = r.nextInt(10)
-            println("O numero é:  "+  n)
+            println(s"O numero é: $n")
                Worker ! Guess(n)
         }
-        case Resultado(num) => {
-                listener ! Resultado(0)
-                context.stop(self)
-            }
+        case Contador => {
+            cont += 1
         }
+        case Resultado() => {
+               listener ! Exibir(cont)
+}
+}
 }
 
-class listener(num: Int) extends Actor{
+class listener extends Actor{
  
      def receive: Receive = {
-        case Resultado(num) => {
-            if(num==0){
+        case Exibir(cont) => {
+            if(cont==0){
                 println("Ninguem Acertou!")
             }
             else{
-                println(num + " acertaram")
+                println(cont + " acertaram")
             }
         }
      }
@@ -66,7 +69,7 @@ class listener(num: Int) extends Actor{
 object Main{
     def main(args: Array[String]): Unit = {
         val system = ActorSystem("MasterSystem")
-        val listener = system.actorOf(Props(new listener(0)),"listener")
+        val listener = system.actorOf(Props(new listener),"listener")
         val masterActor = system.actorOf(Props(new Master(0,listener)),"masterActor")
         masterActor ! Guess
     }

@@ -8,10 +8,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Master$$anonfun$receive$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	listener$$anonfun$receive$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/listener$$anonfun$receive$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Exibir.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Exibir.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Resultado$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Resultado$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Message.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Message.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Exibir$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Exibir$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Resultado.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Resultado.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$2.class[0m
@@ -20,6 +24,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Guess.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Worker$$anonfun$receive$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Worker$$anonfun$receive$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Contador$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Contador$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Contador.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Contador.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Guess$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/ubuntu/workspace/Engsoftware3/Ex2/target/scala-2.11/classes/Guess$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
