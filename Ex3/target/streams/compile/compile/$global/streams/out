@@ -1,0 +1,54 @@
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:13:12: object pipes is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.pipes._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:14:12: object filters is not a member of package com[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.filters._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:17:19: illegal cyclic reference involving class Message[0m
+[0m[[0m[31merror[0m] [0m[0mcase class Message(msg: String) extends Message[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:16:12: case class Start has case ancestor Message, but case-to-case inheritance is prohibited. To overcome this limitation, use extractors to pattern match on non-leaf nodes.[0m
+[0m[[0m[31merror[0m] [0m[0mcase class Start(msg: String) extends Message[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:16:39: not enough arguments for constructor Message: (msg: String)Message.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter msg.[0m
+[0m[[0m[31merror[0m] [0m[0mcase class Start(msg: String) extends Message[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:21:24: not found: type ActorRef[0m
+[0m[[0m[31merror[0m] [0m[0mclass DataSource(prox: ActorRef){[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:23:39: value msg is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m        println("Mensagem original: " msg)[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:24:16: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        return ()[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:32:16: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        return ()[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:41:9: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        return [0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:49:9: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        return[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:56:9: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        return[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:71:26: value Message is not a member of DataSource[0m
+[0m[[0m[31merror[0m] [0m[0m            out = filtro.Message(Message)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/ubuntu/workspace/Engsoftware3/Ex3/src/main/scala/filtro.scala:85:9: not found: value DataSource[0m
+[0m[[0m[31merror[0m] [0m[0m        DataSource ! Start("AlO MunDo")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m

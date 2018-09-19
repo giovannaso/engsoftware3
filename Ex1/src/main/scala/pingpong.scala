@@ -21,7 +21,7 @@ class AtorA(valor: Int, actb: ActorRef) extends Actor{
     def receive: Receive = {
         case Start => {
         println("Ping")
-        actb ! Ping(0)
+        actb ! Ping(1)
         }
         case Pong(valor) => {
         println("Ping")
@@ -40,7 +40,13 @@ class AtorB(valor: Int) extends Actor{
      def receive: Receive = {
         case Ping(valor) => {
             println("Pong")
+            if(valor<2000){
             sender() ! Pong(valor+1)
+            }
+            else {
+            println("Fim do jogo")
+            context.stop(self)
+          }
         } 
      }
 }
